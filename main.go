@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// 初始化 GoChassis
-	chassis.RegisterSchema("rest", &schema.Hello{})
+	chassis.RegisterSchema("rest", &schema.RestFulHello{})
 	err := chassis.Init()
 	if err != nil {
 		log.Fatalf("Failed to initialize GoChassis: %v", err)

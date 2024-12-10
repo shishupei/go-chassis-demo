@@ -6,8 +6,11 @@ basePath: /
 paths:
   /hello:
     get:
-      operationId: Hello
+      operationId: Sayhello
       consumes:
       - '*/*'
       produces:
       - '*/*'
+      responses:
+        "200":
+          description: ""

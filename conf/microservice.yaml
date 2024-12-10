@@ -1,3 +1,6 @@
 servicecomb:
   service:
+    app: go-demo
+    environment: development
     name: go-chassis-demo # name your provider
+    version: 0.0.2
