@@ -4,3 +4,10 @@ servicecomb:
     environment: development
     name: go-chassis-demo # name your provider
     version: 0.0.2
+  config:
+    client:
+      serverUri: http://localhost:30103
+      fileSource: provider.yaml
+      firstPullRequired: false
+      refresh_interval: 15000
+      domainName: default
