@@ -4,46 +4,10 @@ info:
   version: ""
 basePath: /
 paths:
-  /:
+  /hello:
     get:
-      operationId: Root
+      operationId: Hello
       consumes:
       - '*/*'
       produces:
       - '*/*'
-      responses:
-        "200":
-          description: ""
-  /sayhello/{userid}:
-    get:
-      operationId: Sayhello
-      consumes:
-      - '*/*'
-      produces:
-      - '*/*'
-      responses:
-        "200":
-          description: ""
-  /sayhi:
-    post:
-      operationId: Sayhi
-      consumes:
-      - '*/*'
-      produces:
-      - '*/*'
-      responses:
-        "200":
-          description: ""
-  /sayjson:
-    post:
-      tags:
-      - users
-      - test
-      operationId: SayJSON
-      consumes:
-      - '*/*'
-      produces:
-      - '*/*'
-      responses:
-        "200":
-          description: ""
